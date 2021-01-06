@@ -28,5 +28,5 @@ class ApplicationController < ActionController::Base
     }
     cookies[:cart]
   end
-
+  
 end
