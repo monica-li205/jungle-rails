@@ -39,31 +39,33 @@ main section.categories-show {
         opacity: 0.3;
         transition: all 0.3s;
       }
-
-      aside.price {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 10px;
-        background-color: #eee;
-        border-top-right-radius: 4px;
-        border-bottom-left-radius: 20px;
-        font-size: 0.8em;
-      }
-
-      aside.sold_out {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-top-left-radius: 4px;
-        border-bottom-right-radius: 20px;
-        background-color: indianred;
-        opacity: 0.7;
-        color: white;
-        padding: 10px;
-        font-size: 1em;
-        font-style: oblique;
-        font-weight: bolder;
+      
+      aside {        
+        &.price {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 10px;
+          background-color: #eee;
+          border-top-right-radius: 4px;
+          border-bottom-left-radius: 20px;
+          font-size: 0.8em;
+        }
+  
+        &.sold_out {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-top-left-radius: 4px;
+          border-bottom-right-radius: 20px;
+          background-color: indianred;
+          opacity: 0.7;
+          color: white;
+          padding: 10px;
+          font-size: 1em;
+          font-style: oblique;
+          font-weight: bolder;
+        }
       }
 
       &:hover {
