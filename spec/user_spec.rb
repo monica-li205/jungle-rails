@@ -7,13 +7,13 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe 'Validations' do
-    subject {
-      described_class.new(
-        first_name:,
-        last_name:,
-        email:,
-        password_digest:)
-    }
+    
+    user = User.new(
+      first_name:,
+      last_name:,
+      email:,
+      password_digest:)
+    
     # validation tests/examples here
     it 'has a valid password and password confirmation' do
     end
