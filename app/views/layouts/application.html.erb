@@ -12,10 +12,13 @@
 
   <main class="container">
   <% if current_user %>
-    Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+    Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
   <% else %>
     <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
   <% end %>
+    <% flash.each do |type, message|%>
+      <div class="alert alert-danger flash <%= type %>"> <%= message.first %> </div>
+    <%end%>
     <%= yield %>
   </main>
 
