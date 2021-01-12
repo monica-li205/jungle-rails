@@ -15,21 +15,21 @@ RSpec.describe Product, type: :model do
       product.save
     end
 
-    it "is has a name" do
+    it "has a valid name" do
       product.name = nil
       product.save
       expect(product).to_not be_valid
       expect(product.errors.full_messages).to include("Name can't be blank")
     end
 
-    it "is has a price" do
+    it "has a valid price" do
       product.price_cents = nil
       product.save
       expect(product).to_not be_valid
       expect(product.errors.full_messages).to include("Price is not a number")
     end
 
-    it "is has a quantity" do
+    it "has a quantity" do
       product.quantity = nil
       product.save
       expect(product).to_not be_valid
