@@ -1,8 +1,3 @@
-# must validate
-# password and confirmation, mimumum length
-# unique email
-# email present
-# first name and last name present
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
@@ -103,8 +98,26 @@ RSpec.describe User, type: :model do
       expect(user2).to_not be_valid
     end
   end
-  
+
   describe '.authenticate_with_credentials' do
     # examples for this class method here
+    currentUser = User.new(
+      first_name: "Anything",
+      last_name:"Anything",
+      email: "Anything@Anything.com",
+      password: "password",
+      password_confirmation: "password")
+
+    it 'trims spaces around the email if present' do
+      currentUser.email = '   Anything@Anything.com  '
+      currentUser.save
+      expect(currentUser).to be_valid
+    end
+
+    it 'ignores letter case for emails' do
+      currentUser.email = 'anything@anything.COM'
+      currentUser.save
+      expect(currentUser).to be_valid
+    end  
   end
 end
