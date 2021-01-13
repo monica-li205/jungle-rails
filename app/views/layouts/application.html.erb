@@ -17,8 +17,8 @@
     <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
   <% end %>
     <% flash.each do |type, message|%>
-      <div class="alert alert-danger flash <%= type %>"> <%= message.first %> </div>
-    <%end%>
+      <div class="alert alert-danger flash <%= type %>" > <%= message %> </div>
+    <% end %>
     <%= yield %>
   </main>
 
