@@ -1,9 +1,13 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
+<<<<<<< HEAD
 
 require File.expand_path('../config/environment', __dir__)
 
+=======
+require File.expand_path('../config/environment', __dir__)
+>>>>>>> ce941574856a7f3c44328853aaa1101e7c5af892
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
@@ -22,7 +26,11 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
+<<<<<<< HEAD
 # Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+=======
+# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+>>>>>>> ce941574856a7f3c44328853aaa1101e7c5af892
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
@@ -41,6 +49,12 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
+<<<<<<< HEAD
+=======
+  # You can uncomment this line to turn off ActiveRecord support entirely.
+  # config.use_active_record = false
+
+>>>>>>> ce941574856a7f3c44328853aaa1101e7c5af892
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
@@ -48,7 +62,11 @@ RSpec.configure do |config|
   # You can disable this behaviour by removing the line below, and instead
   # explicitly tag your specs with their type, e.g.:
   #
+<<<<<<< HEAD
   #     RSpec.describe UsersController, :type => :controller do
+=======
+  #     RSpec.describe UsersController, type: :controller do
+>>>>>>> ce941574856a7f3c44328853aaa1101e7c5af892
   #       # ...
   #     end
   #
