@@ -25,6 +25,7 @@ Capybara.javascript_driver = :poltergeist
 #
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 =======
 # Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
@@ -32,6 +33,10 @@ Capybara.javascript_driver = :poltergeist
 =======
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 >>>>>>> feature/setup-feature-specs
+=======
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+>>>>>>> feature/testing-add-to-cart
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
