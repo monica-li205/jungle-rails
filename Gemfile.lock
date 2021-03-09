@@ -125,7 +125,7 @@ GEM
     puma (3.5.2)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.6)
@@ -250,11 +250,7 @@ DEPENDENCIES
   rails (= 4.2.6)
   rails_12factor
   rmagick
-<<<<<<< HEAD
-  rspec-rails (~> 3.5)
-=======
   rspec-rails (~> 4.0.2)
->>>>>>> ce941574856a7f3c44328853aaa1101e7c5af892
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
